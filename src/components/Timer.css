@@ -1,0 +1,59 @@
+.timer-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 142px;
+  height: 142px;
+  padding: 20px;
+}
+
+.timer-wrap > img {
+  width: 64px;
+}
+
+.time-input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-input-wrap > button {
+  margin-top: 12px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f03d28;
+  color: white;
+}
+
+.time-input-wrap .input-box {
+  display: flex;
+  width: 100%;
+}
+
+.time-input-wrap .input-box > input {
+  width: 56px;
+}
+
+.time-input-wrap .input-box > input:first-of-type {
+  margin-right: 8px;;
+}
+
+.timer-wrap .time-pannel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.timer-wrap .time-pannel p {
+  font-size: 20px;
+}
+
+.timer-wrap .time-pannel > button {
+  margin-top: 12px;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f03d28;
+  color: white;
+}

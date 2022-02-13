@@ -10,7 +10,7 @@ const devMode = process.env.NODE_ENV || "development";
 
 module.exports = {
   mode: devMode ? "development" : "production",
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".jsx"],
     modules: [path.resolve(__dirname, "./src"), "node_modules"],
@@ -39,7 +39,6 @@ module.exports = {
               },
             },
           },
-          "sass-loader",
         ],
       },
       {
@@ -64,7 +63,8 @@ module.exports = {
 
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(__dirname, "public", "manifest.json"), to: 'manifest.json'}
+        { from: path.resolve(__dirname, "public", "manifest.json"), to: 'manifest.json'},
+        { from: path.resolve(__dirname, "public", "img"), to: 'img'}
       ]
     }),
     new MiniCssExtractPlugin({}),

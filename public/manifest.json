@@ -1,13 +1,15 @@
 {
-  "manifest_version": 1,
-  "name": "Extension Test",
+  "manifest_version": 2,
+  "name": "Pomodoro Timer",
   "version": "0.0.1",
-  "default_locale": "ko",
   "description": "Pomodoro timer",
   "browser_action": {
     "default_popup": "./index.html"
   },
   "permissions": [
     "activeTab",  "http://*/*", "https://*/*"
-  ]
+  ],
+  "icons": {
+    "128": "./img/pomodoro.png"
+  }
 }
