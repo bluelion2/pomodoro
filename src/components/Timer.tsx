@@ -1,11 +1,15 @@
 import { observer } from 'mobx-react'
-import React from 'react'
+import React, { useEffect } from 'react'
 import store from 'src/store'
 import { utils } from 'src/utils'
 import TimeInput from './TimeInput'
 import "./Timer.css"
 
 const Timer = () => {
+
+  useEffect(() => {
+    localStorage.setItem('test', 'helo')
+  }, [])
 
   return (
     <section className='timer-wrap'>

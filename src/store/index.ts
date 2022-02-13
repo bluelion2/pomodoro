@@ -48,6 +48,7 @@ class Store {
 
     if (this.countInterval) {
       clearInterval(this.countInterval)
+      alert('Time Over!')
     }
   }
 }

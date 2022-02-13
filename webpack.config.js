@@ -64,7 +64,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: path.resolve(__dirname, "public", "manifest.json"), to: 'manifest.json'},
-        { from: path.resolve(__dirname, "public", "img"), to: 'img'}
+        { from: path.resolve(__dirname, "public", "img"), to: 'img'},
+        { from: path.resolve(__dirname, "src", "background.js"), to: 'background.js'}
       ]
     }),
     new MiniCssExtractPlugin({}),

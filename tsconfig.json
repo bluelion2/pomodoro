@@ -15,6 +15,6 @@
     "baseUrl": ".",
     "downlevelIteration": true
   },
-  "include": ["src/**/*", "types/*"],
+  "include": ["src/**/*", "types/*", "src/background.js"],
   "exclude": ["node_modules", "dist/*", "public/*"]
 }
