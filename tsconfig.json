@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es5",
+    "lib": ["dom", "ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020"],
+    "allowJs": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "isolatedModules": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "downlevelIteration": true
+  },
+  "include": ["src/**/*", "types/*"],
+  "exclude": ["node_modules", "dist/*", "public/*"]
+}
